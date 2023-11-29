@@ -48,9 +48,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1em;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 /* Estilos para las cartas */
 #inicio {
@@ -74,15 +72,6 @@ section {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: #ffffff;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    position: relative;
 }
 
 /* Estilos adicionales para el menú desplegable */
