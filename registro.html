@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro - Tu Centro de Masajes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ecf0f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/img/img.png" style="width: 120px" alt="" />
+        <div>
+            <h1>Tu Centro de Masajes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="fisioterapiaDeportiva.html">Fisioterapia deportiva</a>
+                            <a href="fisioterapiaManual.html">Fisioterapia manual</a>
+                            <a href="osteopatia.html">Osteopatía</a>
+                            <a href="fisioterapiaGeriatica.html">Fisioterapia geriátrica</a>
+                            <a href="fisioteraiaOrtopedica.html">Fisioterapia ortopédica</a>
+                        </div>
+                    </li>
+                    <li><a href="registro.html">Regístrate con nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="registro">
+        <h2>Regístrate con Nosotros</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </section>
+
+    <footer >
+        Teléfono:</strong> +51 992 855 224
+        <br><br>
+        Dirección:</strong> Av. José Gálvez Barrenechea 148, San Isidro 15036
+      <p>&copy; 2023 Tu Centro de Masajes</p>
+    </footer>
+
+    <script>
+        function enviarFormulario() {
+            // Aquí puedes agregar la lógica para procesar los datos del formulario
+            // Por ahora, simplemente restablecemos los campos a blanco
+            document.getElementById("registroForm").reset();
+        }
+    </script>
+</body>
+</html>
